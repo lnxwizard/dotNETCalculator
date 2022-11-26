@@ -1,0 +1,149 @@
+﻿<Window x:Class="WindowsCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsCalculator"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title=".NET Calculator" Height="480" Width="332" WindowStartupLocation="CenterScreen" 
+        ResizeMode="CanMinimize" Background="#e6e6e6">
+    <Grid Margin="5" Background="#e6e6e6">
+        <Grid.RowDefinitions>
+            <!-- Row Definition for Menu -->
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+            <!-- Row Definition for Output -->
+            <RowDefinition Height="70"/>
+            <!-- Row Definition for Numbers & Actions -->
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="75"/>
+        </Grid.ColumnDefinitions>
+        <!-- Grid Row 0 -->
+        <TextBlock x:Name="CalculatorType" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1"
+                   Foreground="Black" Text="Standart" TextWrapping="NoWrap" FontSize="18"
+                   FontWeight="DemiBold"
+        />
+        <Button x:Name="MenuButton" Grid.Row="0" Grid.Column="2" Width="30" 
+                HorizontalAlignment="Left" Content="☰" BorderThickness="0" 
+                Background="#e6e6e6" ToolTip="Open Menu"       
+        />
+        <Button x:Name="CopyButton" Grid.Row="0" Grid.Column="2" Width="30" 
+                HorizontalAlignment="Left" Content="Copy" BorderThickness="0" 
+                Background="#e6e6e6" Margin="30,0,0,0" Click="CopyButton_Click"
+                ToolTip="Copy Result"
+        />
+        <!-- Grid Row 1 -->
+        <TextBox x:Name="PreviewOutput" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="7"
+                   Foreground="Black" Text="" TextWrapping="Wrap" FontSize="14" FontWeight="ExtraLight"
+                   TextAlignment="Right" IsReadOnly="True" Background="#e6e6e6"
+                   BorderThickness="0"
+        />
+        <!-- Grid Row 2 -->
+        <TextBox x:Name="Output" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="7"
+                 Foreground="Black" FontSize="48" FontWeight="DemiBold"
+                 TextWrapping="NoWrap" TextAlignment="Right" Text="0" BorderThickness="0" 
+                 Background="#e6e6e6" IsReadOnly="True"
+        />
+        <!-- Grid Row 3 -->
+        <Button x:Name="buttonPercent" Content="%" Grid.Row="3" FontSize="20" 
+                Background="#f0f0f0" BorderThickness="0" Click="buttonPercent_Click"      
+        />
+        <Button x:Name="buttonClear" Content="CE" Grid.Row="3" Grid.Column="2" 
+                FontSize="14" Background="#f0f0f0" BorderThickness="0" Click="buttonClear_Click"
+        />
+        <Button x:Name="buttonClearAll" Content="C" Grid.Row="3" Grid.Column="4" 
+                FontSize="14" Background="#f0f0f0" BorderThickness="0" Click="buttonClearAll_Click"
+        />
+        <Button x:Name="buttonDelete" Content="DEL" Grid.Row="3" Grid.Column="6" 
+                FontSize="14" Background="#f0f0f0" BorderThickness="0" Click="buttonDelete_Click"
+        />
+        <!-- Grid Row 5 -->
+        <Button x:Name="buttonOneX" Content="1/x" Grid.Row="5" FontSize="14" 
+                Background="#f0f0f0" BorderThickness="0" Click="buttonOneX_Click"
+        />
+        <Button x:Name="buttonSqr" Content="x²" Grid.Row="5" Grid.Column="2" 
+                FontSize="14" Background="#f0f0f0" BorderThickness="0" Click="buttonSqr_Click"
+        />
+        <Button x:Name="buttonSquareRoot" Content="²√¯x" Grid.Row="5" 
+                Grid.Column="4" FontSize="14" Background="#f0f0f0" 
+                BorderThickness="0" Click="buttonSquareRoot_Click"
+        />
+        <Button x:Name="buttonDivision" Content="÷" Grid.Row="5" Grid.Column="6" 
+                FontSize="26" Background="#f0f0f0" BorderThickness="0" FontWeight="Light" Click="buttonDivision_Click"
+        />
+        <!-- Grid Row 7 -->
+        <Button x:Name="buttonSeven" Content="7" Grid.Row="7" FontSize="18" 
+                Background="#fafafa" BorderThickness="0" FontWeight="DemiBold" 
+                Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonEight" Content="8" Grid.Row="7" Grid.Column="2" 
+                FontSize="18" Background="#fafafa" BorderThickness="0" 
+                FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonNine" Content="9" Grid.Row="7" Grid.Column="4" 
+                FontSize="18" Background="#fafafa" BorderThickness="0" 
+                FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonMultiply" Content="x" Grid.Row="7" Grid.Column="6" 
+                FontSize="26" Background="#f0f0f0" BorderThickness="0" 
+                FontWeight="Light" Click="buttonMultiply_Click"
+        />
+        <!-- Grid Row 9 -->
+        <Button x:Name="buttonFour" Content="4" Grid.Row="9" FontSize="18" Background="#fafafa" 
+                BorderThickness="0" FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonFive" Content="5" Grid.Row="9" Grid.Column="2" FontSize="18" 
+                Background="#fafafa" BorderThickness="0" FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonSix" Content="6" Grid.Row="9" Grid.Column="4" FontSize="18" 
+                Background="#fafafa" BorderThickness="0" FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonSubtraction" Content="-" Grid.Row="9" Grid.Column="6" FontSize="26" 
+                Background="#f0f0f0" BorderThickness="0" FontWeight="Light" Click="buttonSubtraction_Click"
+        />
+        <!-- Grid Row 11 -->
+        <Button x:Name="buttonOne" Content="1" Grid.Row="11" FontSize="18" Background="#fafafa" 
+                BorderThickness="0"  FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonTwo" Content="2" Grid.Row="11" Grid.Column="2" FontSize="18" 
+                Background="#fafafa" BorderThickness="0" FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonThree" Content="3" Grid.Row="11" Grid.Column="4" FontSize="18" 
+                Background="#fafafa" BorderThickness="0" FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonAddition" Content="+" Grid.Row="11" Grid.Column="6" FontSize="26" 
+                Background="#f0f0f0" BorderThickness="0" FontWeight="Light" Click="buttonAddition_Click"
+        />
+        <!-- Grid Row 13 -->
+        <Button x:Name="buttonPoNe" Content="+/-" Grid.Row="13" FontSize="16" Background="#fafafa" 
+                BorderThickness="0" Click="buttonPoNe_Click"
+        />
+        <Button x:Name="buttonZero" Content="0" Grid.Row="13" Grid.Column="2" FontSize="18" 
+                Background="#fafafa" BorderThickness="0"  FontWeight="DemiBold" Click="NumberButton_Click"
+        />
+        <Button x:Name="buttonDot" Content="." Grid.Row="13" Grid.Column="4" FontSize="16"
+                Background="#fafafa" BorderThickness="0"
+        />
+        <Button x:Name="buttonEquals" Content="=" Grid.Row="13" Grid.Column="6" 
+                Background="#8abae0" FontSize="26" BorderThickness="0" Click="buttonEquals_Click"
+        />
+    </Grid>
+</Window>

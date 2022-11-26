@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNETCalculator", "dotNETCalculator\dotNETCalculator.csproj", "{E2E54A06-1ED3-46E8-ACCB-39179E1A6AE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE3DAE57-7E78-45D8-A038-B038050AA2CA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2E54A06-1ED3-46E8-ACCB-39179E1A6AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E54A06-1ED3-46E8-ACCB-39179E1A6AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E54A06-1ED3-46E8-ACCB-39179E1A6AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E54A06-1ED3-46E8-ACCB-39179E1A6AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22303838-BBB4-4FF8-9764-681570E07565}
+	EndGlobalSection
+EndGlobal
