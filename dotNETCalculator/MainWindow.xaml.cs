@@ -209,6 +209,9 @@ namespace WindowsCalculator
         // Equals Button
         private void buttonEquals_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(output))
+                output = temp.ToString();
+
             PreviewOutput.Text = (temp.ToString() + " " + operation + " " + double.Parse(output) + " " + "=");
 
             switch (operation)
