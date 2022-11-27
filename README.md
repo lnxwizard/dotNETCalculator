@@ -31,5 +31,6 @@
     <li> Percentage (%) don't working for now. </li>
     <li> Negative-Positive (-/+) don't working for now. </li>
     <li> Menu button and Calculator Type Changes don't work for now. </li>
+    <li> Dot (.) button don't working for now. </li>
   </ul>
 </p>
