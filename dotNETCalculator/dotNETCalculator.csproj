@@ -7,9 +7,9 @@
     <Authors>AlperAkca79</Authors>
     <Product>dotNETCalculator</Product>
     <Description>Like Windows Calculator.</Description>
-    <AssemblyVersion>0.1.0.0</AssemblyVersion>
-    <FileVersion>0.1.0.0</FileVersion>
-    <Version>0.1.0.0</Version>
+    <AssemblyVersion>0.1.0.1</AssemblyVersion>
+    <FileVersion>0.1.0.1</FileVersion>
+    <Version>0.1.0.1</Version>
     <ApplicationIcon>dotNETCalculator-blue-50x50.ico</ApplicationIcon>
   </PropertyGroup>
 
