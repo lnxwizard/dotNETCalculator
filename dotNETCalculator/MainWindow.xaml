@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WindowsCalculator"
-        mc:Ignorable="d" Loaded="Window_Loaded"
+        mc:Ignorable="d"
         Title=".NET Calculator" Height="480" Width="332" WindowStartupLocation="CenterScreen" 
         ResizeMode="CanMinimize" Background="#e6e6e6">
     <Grid Margin="5" Background="#e6e6e6">
@@ -38,7 +38,7 @@
         </Grid.ColumnDefinitions>
         <!-- Grid Row 0 -->
         <TextBlock x:Name="CalculatorType" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1"
-                   Foreground="Black" Text="Standart" TextWrapping="NoWrap" FontSize="18"
+                   Foreground="Black" Text="Standard" TextWrapping="NoWrap" FontSize="18"
                    FontWeight="DemiBold"
         />
         <Button x:Name="MenuButton" Grid.Row="0" Grid.Column="2" Width="30" 
@@ -46,7 +46,7 @@
                 Background="#e6e6e6" ToolTip="Open Menu"       
         />
         <Button x:Name="CopyButton" Grid.Row="0" Grid.Column="2" Width="30" 
-                HorizontalAlignment="Left" Content="Copy" BorderThickness="0" 
+                HorizontalAlignment="Left" Content="📋" BorderThickness="0" 
                 Background="#e6e6e6" Margin="30,0,0,0" Click="CopyButton_Click"
                 ToolTip="Copy Result"
         />
@@ -72,7 +72,7 @@
         <Button x:Name="buttonClearAll" Content="C" Grid.Row="3" Grid.Column="4" 
                 FontSize="14" Background="#f0f0f0" BorderThickness="0" Click="buttonClearAll_Click"
         />
-        <Button x:Name="buttonDelete" Content="DEL" Grid.Row="3" Grid.Column="6" 
+        <Button x:Name="buttonDelete" Content="⌫" Grid.Row="3" Grid.Column="6" 
                 FontSize="14" Background="#f0f0f0" BorderThickness="0" Click="buttonDelete_Click"
         />
         <!-- Grid Row 5 -->
@@ -102,7 +102,7 @@
                 FontSize="18" Background="#fafafa" BorderThickness="0" 
                 FontWeight="DemiBold" Click="NumberButton_Click"
         />
-        <Button x:Name="buttonMultiply" Content="x" Grid.Row="7" Grid.Column="6" 
+        <Button x:Name="buttonMultiply" Content="×" Grid.Row="7" Grid.Column="6" 
                 FontSize="26" Background="#f0f0f0" BorderThickness="0" 
                 FontWeight="Light" Click="buttonMultiply_Click"
         />
@@ -116,7 +116,7 @@
         <Button x:Name="buttonSix" Content="6" Grid.Row="9" Grid.Column="4" FontSize="18" 
                 Background="#fafafa" BorderThickness="0" FontWeight="DemiBold" Click="NumberButton_Click"
         />
-        <Button x:Name="buttonSubtraction" Content="-" Grid.Row="9" Grid.Column="6" FontSize="26" 
+        <Button x:Name="buttonSubtraction" Content="−" Grid.Row="9" Grid.Column="6" FontSize="26" 
                 Background="#f0f0f0" BorderThickness="0" FontWeight="Light" Click="buttonSubtraction_Click"
         />
         <!-- Grid Row 11 -->
@@ -133,14 +133,14 @@
                 Background="#f0f0f0" BorderThickness="0" FontWeight="Light" Click="buttonAddition_Click"
         />
         <!-- Grid Row 13 -->
-        <Button x:Name="buttonPoNe" Content="+/-" Grid.Row="13" FontSize="16" Background="#fafafa" 
+        <Button x:Name="buttonPoNe" Content="±" Grid.Row="13" FontSize="16" Background="#fafafa" 
                 BorderThickness="0" Click="buttonPoNe_Click"
         />
         <Button x:Name="buttonZero" Content="0" Grid.Row="13" Grid.Column="2" FontSize="18" 
                 Background="#fafafa" BorderThickness="0"  FontWeight="DemiBold" Click="NumberButton_Click"
         />
         <Button x:Name="buttonDot" Content="." Grid.Row="13" Grid.Column="4" FontSize="16"
-                Background="#fafafa" BorderThickness="0"
+                Background="#fafafa" BorderThickness="0" Click="buttonDot_Click"
         />
         <Button x:Name="buttonEquals" Content="=" Grid.Row="13" Grid.Column="6" 
                 Background="#8abae0" FontSize="26" BorderThickness="0" Click="buttonEquals_Click"

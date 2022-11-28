@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName ".NET Calculator"
-#define MyAppVersion "0.1.0.1"
+#define MyAppVersion "0.1.0.4"
 #define MyAppPublisher "AlperAkca79"
 #define MyAppURL "https://alperakca79.github.io/dotNETCalculator/"
 #define MyAppExeName "dotNETCalculator.exe"

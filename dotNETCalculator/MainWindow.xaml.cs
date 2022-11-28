@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WindowsCalculator
 {
@@ -31,20 +20,7 @@ namespace WindowsCalculator
         {
             InitializeComponent();
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Unicode Texts
-            buttonDelete.Content = "\u232B";
-            buttonDivision.Content = "\u00F7";
-            buttonPercent.Content = "\uFF05";
-            buttonAddition.Content = "\u002B";
-            buttonMultiply.Content = "\u00D7";
-            buttonSubtraction.Content = "\u2212";
-            buttonEquals.Content = "\u003D";
-            CopyButton.Content = "📋";
-        }
-
+        
         // Number Button
         private void NumberButton_Click(object sender, RoutedEventArgs e)
         {
@@ -239,6 +215,12 @@ namespace WindowsCalculator
                     output = outputTempDiv.ToString();
                     Output.Text = output;
                     break;
+
+                case "%":
+                    double outputTempPer = (temp * double.Parse(output)) / 100;
+                    output = outputTempPer.ToString();
+                    Output.Text = output;
+                    break;
             }           
         }
 
@@ -293,7 +275,7 @@ namespace WindowsCalculator
 
         // Percentage Button
         private void buttonPercent_Click(object sender, RoutedEventArgs e)
-        {      
+        {
             /*
             if (output != "")
             {
@@ -314,6 +296,16 @@ namespace WindowsCalculator
             }
             PreviewOutput.Text = (temp.ToString() + " " + operation + " " + output);
             */
+           
+            if (output != "")
+            {
+                temp = double.Parse(output);
+
+                output = "";
+
+                operation = "%";
+            }
+            PreviewOutput.Text = (temp.ToString() + " " + operation);
         }
 
         // Copy Button
@@ -348,8 +340,20 @@ namespace WindowsCalculator
 
         // Pozitive(+) - Negative(-)
         private void buttonPoNe_Click(object sender, RoutedEventArgs e)
+        {}
+
+        // Dot(.)
+        private void buttonDot_Click(object sender, RoutedEventArgs e)
         {
-            
+            string name = ((Button)sender).Name;
+
+            switch (name)
+            {
+                case "buttonDot":
+                    output += ".";
+                    Output.Text = output;
+                    break;
+            }
         }
     }
 }
