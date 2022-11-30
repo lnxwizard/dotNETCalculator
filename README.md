@@ -34,7 +34,7 @@
 </table>
 <p>
   <h2 align="center"> Code of Conduct </h2>
-  <h3> <a href="https://github.com/AlperAkca79/dotNETCalculator/blob/master/CODE_OF_CONDUCT.md">Here</a> </h3>
+  This project has adopted the Code of Conduct. For more information see the Code of Conduct FAQ or contact with any additional questions or comments.
 </p>
 <p align="center">
   <h2 align="center"> Known Issues </h2>
