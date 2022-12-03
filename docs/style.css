@@ -1,0 +1,13 @@
+body{
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+a{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: larger;
+}
