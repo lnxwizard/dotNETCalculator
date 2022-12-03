@@ -197,7 +197,7 @@ namespace WindowsCalculator
                     output = outputTempSub.ToString();
                     Output.Text = output;
                     break;
-                
+
                 case "+":
                     double outputTempAdd = temp + double.Parse(output);
                     output = outputTempAdd.ToString();
@@ -209,11 +209,11 @@ namespace WindowsCalculator
                     output = outputTempMul.ToString();
                     Output.Text = output;
                     break;
-
-                case "/":
+                    
+                case "/":                   
                     double outputTempDiv = temp / double.Parse(output);
                     output = outputTempDiv.ToString();
-                    Output.Text = output;
+                    Output.Text = output;                                       
                     break;
 
                 case "%":
@@ -221,7 +221,7 @@ namespace WindowsCalculator
                     output = outputTempPer.ToString();
                     Output.Text = output;
                     break;
-            }           
+            }
         }
 
 
@@ -239,7 +239,7 @@ namespace WindowsCalculator
         // Delete Button
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
-            Output.Undo();
+            
         }
 
         // Clear Button
@@ -275,28 +275,7 @@ namespace WindowsCalculator
 
         // Percentage Button
         private void buttonPercent_Click(object sender, RoutedEventArgs e)
-        {
-            /*
-            if (output != "")
-            {
-                temp = double.Parse(output);
-
-                output = "";
-
-                operation = "%";
-            }
-
-            switch (operation)
-            {
-                case "%":
-                    double outputTempPer = temp / double.Parse(output) * 100;
-                    output = outputTempPer.ToString();
-                    Output.Text = output;
-                    break;
-            }
-            PreviewOutput.Text = (temp.ToString() + " " + operation + " " + output);
-            */
-           
+        {           
             if (output != "")
             {
                 temp = double.Parse(output);
@@ -340,7 +319,17 @@ namespace WindowsCalculator
 
         // Pozitive(+) - Negative(-)
         private void buttonPoNe_Click(object sender, RoutedEventArgs e)
-        {}
+        {
+            string name = ((Button)sender).Name;
+
+            switch (name)
+            {
+                case "buttonPoNe":
+                    output += "-";
+                    Output.Text = output;
+                    break;
+            }
+        }
 
         // Dot(.)
         private void buttonDot_Click(object sender, RoutedEventArgs e)

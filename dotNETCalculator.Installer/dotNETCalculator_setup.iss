@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName ".NET Calculator"
-#define MyAppVersion "0.1.0.4"
+#define MyAppVersion "0.1.0.5"
 #define MyAppPublisher "AlperAkca79"
 #define MyAppURL "https://alperakca79.github.io/dotNETCalculator/"
 #define MyAppExeName "dotNETCalculator.exe"
@@ -24,7 +24,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
-LicenseFile=C:\Users\alper\OneDrive\Masaüstü\LICENSE.txt
+LicenseFile=C:\Users\Alper\Source\Repos\dotNETCalculator\LICENSE
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 OutputDir=C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator.Installer
@@ -40,15 +40,15 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\alper\OneDrive\Masaüstü\LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\dotNETCalculator-blue-50x50.ico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\ref\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.deps.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.pdb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.runtimeconfig.dev.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\LICENSE"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\dotNETCalculator-blue-50x50.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\ref\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.deps.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.runtimeconfig.dev.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alper\Source\Repos\dotNETCalculator\dotNETCalculator\bin\Release\net6.0-windows\dotNETCalculator.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
