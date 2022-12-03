@@ -42,6 +42,7 @@
     <li> Menu button and Calculator Type Changes don't work for now. </li>
     <li> More than 1 can be pressed the Dot(.) button. </li>
     <li> Delete (⌫) don't working for now. </li>
+    <li> More than 1 can be pressed the Negative/Pozitive(±) button. </li>
     <li> When a number is divided by zero the result is infinite(∞) </li>
     <img src="https://user-images.githubusercontent.com/91411319/205452904-c9cdf8d3-49a5-4a55-a3b2-d89f327df2ef.png">
   </ul>
