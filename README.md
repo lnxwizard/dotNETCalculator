@@ -10,9 +10,9 @@
 <h2 align="center"> About .NET Calculator </h2>
 <p>
   <ul>
-    <li> <b>Version:</b> Pre-Release v0.1.0.4 </li>
+    <li> <b>Version:</b> Pre-Release v0.1.0.5 </li>
     <li> <b>First Pre-Release:</b> Saturday, November 26, 2022 </li>
-    <li> <b>Last Updated:</b> Monday, November 28, 2022 </li>
+    <li> <b>Last Updated:</b> Saturday, December 3, 2022 </li>
     <li> <b>License:</b> MIT License <a href="https://mit-license.org/"> Official Website </a> </li>
     <li> <b>Language:</b> C# (C Sharp) </li>
     <li> <b>Platform Architecture:</b> x86, x64, arm64 </li>
@@ -39,8 +39,11 @@
 <p align="center">
   <h2 align="center"> Known Issues </h2>
   <ul>
-    <li> Negative-Positive (-/+) don't working for now. </li>
     <li> Menu button and Calculator Type Changes don't work for now. </li>
     <li> More than 1 can be pressed the Dot(.) button. </li>
+    <li> Delete (⌫) don't working for now. </li>
+    <li> More than 1 can be pressed the Negative/Pozitive(±) button. </li>
+    <li> When a number is divided by zero the result is infinite(∞) </li>
+    <img src="https://user-images.githubusercontent.com/91411319/205452904-c9cdf8d3-49a5-4a55-a3b2-d89f327df2ef.png">
   </ul>
 </p>
