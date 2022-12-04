@@ -2,7 +2,8 @@
   <img src="https://user-images.githubusercontent.com/91411319/204101016-2dc6e3bb-c9e2-4d63-965c-a452e972b022.png">
   <h1 align="center">.NET Calculator</h1>
   <h3 align="center"> Windows 10 Calculator Clone for Windows (7/8/8.1) </h3>
-  <h4 align="center"><B>NOTE:</B> .NET Calculator is in Pre-Release. Not stable for now. If you find a bug/issue don't forget to open new issue on <a href="https://github.com/AlperAkca79/dotNETCalculator/issues/new">here.</a></h4>
+  <h4 align="center"> Made with C# .NET 6 </h4>
+  <h5 align="center"><b>NOTE:</b> .NET Calculator is in Pre-Release. Not stable for now. If you find a bug/issue don't forget to open new issue on <a href="https://github.com/AlperAkca79/dotNETCalculator/issues/new">here.</a></h5>
 </p>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/91411319/204359239-50e9179f-f410-45e4-b2b9-9004048b1ba2.png">
