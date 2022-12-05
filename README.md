@@ -1,6 +1,11 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/91411319/204101016-2dc6e3bb-c9e2-4d63-965c-a452e972b022.png">
   <h1 align="center">.NET Calculator</h1>
+  <p align="center">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/AlperAkca79/dotNETCalculator?label=Open%20Issues&style=flat-square">
+    <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/AlperAkca79/dotNETCalculator?color=red&label=Closed%20Issues&style=flat-square">
+    
+  </p>
   <h3 align="center"> Windows 10 Calculator Clone for Windows (7/8/8.1) </h3>
   <h4 align="center"> Made with C# .NET 6 </h4>
   <h5 align="center"><b>NOTE:</b> .NET Calculator is in Pre-Release. Not stable for now. If you find a bug/issue don't forget to open new issue on <a href="https://github.com/AlperAkca79/dotNETCalculator/issues/new">here.</a></h5>
