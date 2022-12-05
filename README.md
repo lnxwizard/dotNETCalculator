@@ -11,7 +11,7 @@
 <h2 align="center"> About .NET Calculator </h2>
 <p>
   <ul>
-    <li> <b>Version:</b> Pre-Release v0.1.0.5 </li>
+    <li> <b>Version:</b> Pre-Release v0.1.0.5 <a href="https://github.com/AlperAkca79/dotNETCalculator/releases/tag/0.1.0.5"> Changelog is Here </a></li>
     <li> <b>First Pre-Release:</b> Saturday, November 26, 2022 </li>
     <li> <b>Last Updated:</b> Saturday, December 3, 2022 </li>
     <li> <b>License:</b> MIT License <a href="https://mit-license.org/"> Official Website </a> </li>
