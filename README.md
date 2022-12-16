@@ -7,7 +7,7 @@
     
   </p>
   <h3 align="center"> Windows 10 Calculator Clone for Windows (7/8/8.1) </h3>
-  <h4 align="center"> Made with C# .NET 6 </h4>
+  <h4 align="center"> Made with C# 10.0 .NET 6 </h4>
   <h5 align="center"><b>NOTE:</b> .NET Calculator is in Pre-Release. Not stable for now. If you find a bug/issue don't forget to open new issue on <a href="https://github.com/AlperAkca79/dotNETCalculator/issues/new">here.</a></h5>
 </p>
 <p align="center">
