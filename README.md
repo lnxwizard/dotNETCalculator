@@ -16,12 +16,12 @@
 <h2 align="center"> About .NET Calculator </h2>
 <p>
   <ul>
-    <li> <b>Version:</b> Pre-Release v0.1.0.5 <a href="https://github.com/AlperAkca79/dotNETCalculator/releases/tag/0.1.0.5"> Changelog is Here </a></li>
+    <li> <b>Version:</b> Pre-Release v0.1.0.6 <a href="https://github.com/AlperAkca79/dotNETCalculator/releases/tag/0.1.0.5"> Changelog is Here </a></li>
     <li> <b>First Pre-Release:</b> Saturday, November 26, 2022 </li>
-    <li> <b>Last Updated:</b> Saturday, December 3, 2022 </li>
+    <li> <b>Last Updated:</b> Thursday, December 22, 2022 </li>
     <li> <b>License:</b> MIT License <a href="https://mit-license.org/"> Official Website </a> </li>
     <li> <b>Language:</b> C# (C Sharp) </li>
-    <li> <b>Platform Architecture:</b> x86, x64, arm64 </li>
+    <li> <b>Platform Architecture:</b> x86, x64, arm </li>
     <li> <b>Supported OS:</b> Windows (7/8/8.1/10/11) </li>
   </ul>
 </p>
