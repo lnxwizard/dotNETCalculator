@@ -10,4 +10,12 @@ a{
     font-family: sans-serif;
     text-decoration: none;
     font-size: larger;
+    color: rgb(0, 105, 224);
+}
+
+.source {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(0, 122, 31);
 }
